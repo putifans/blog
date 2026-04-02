@@ -1,9 +1,316 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <iframe src="https://zerads.com/ad/ad.php?width=728&ref=10999" marginwidth="0" marginheight="0" width="728" height="90" scrolling="no" border="0" frameborder="0"></iframe>
-  <iframe src="https://zerads.com/ad/ad.php?width=468&ref=10999" marginwidth="0" marginheight="0" width="468" height="60" scrolling="no" border="0" frameborder="0"></iframe>
-  <iframe src="https://zerads.com/ad/ad.php?width=300&ref=10999" marginwidth="0" marginheight="0" width="300" height="250" scrolling="no" border="0" frameborder="0"></iframe>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta content='wCMSh1L7IncWsxVw9iqs59rVsOOo1RhpZqZHmobR1qA' name='google-site-verification'/>
+    
+    <title>PutiFans - OnlyFans Gratis</title>
+    <meta name="description" content="Onlyfans para todos · Karely Ruiz · Aida Cortes · Kathrin3 · Sophie Rain · Michelle Rabbit · Yajana Cano · Dahyn11 · DanyanCat. Valecasta.">
+    <meta name="keywords" content="videos hot en PutiFans">
+    
+    <style>
+        :root {
+            --bg-color: #0b0e18;
+            --card-bg: #161b2c;
+            --primary-gradient: linear-gradient(90deg, #6366f1 0%, #d946ef 100%);
+            --text-main: #ffffff;
+            --text-dim: #94a3b8;
+            --search-bg: #1f293a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+
+        header {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Opcional: hace el logo circular */
+            object-fit: cover;
+            border: 2px solid #6366f1;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            z-index: 101;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .menu-icon.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .menu-icon.open span:nth-child(2) { opacity: 0; }
+        .menu-icon.open span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+
+        #menu {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(7, 9, 15, 0.98);
+            z-index: 100;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            backdrop-filter: blur(10px);
+        }
+        #menu a { color: white; text-decoration: none; font-size: 1.3rem; padding: 12px 24px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; width: 220px; text-align: center; }
+        #menu a.back-btn { background: var(--primary-gradient); border: none; font-weight: bold; }
+
+        .hero {
+            text-align: center;
+            padding: 10px 20px 20px 20px;
+            max-width: 500px;
+        }
+
+        .hero h1 span {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .search-container {
+            width: 100%;
+            max-width: 470px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 10px;
+            z-index: 5;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: var(--search-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50px;
+            color: white;
+            font-size: 1rem;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            outline: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card.hidden { display: none; }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 85%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .badge-group {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            padding: 4px 9px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .badge-top { background: #f59e0b; color: #000; }
+        .badge-hot { background: #ef4444; color: #fff; }
+
+        .card-bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .card-name {
+            margin: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .btn-earn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 14px;
+            background: var(--primary-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="https://qu.ax/P0C26.jpg" alt="PutiFans Logo" class="logo-img">
+            PutiFans
+        </div>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="https://t.me/+0gjCssT5rWo5NTYx" target="_blank">Telegram</a>
+        <a href="#" class="back-btn" onclick="toggleMenu()">Volver al Menú</a>
+    </div>
+
+    <div class="hero">
+        <h1><span>PutiFans</span> OnlyFans Gratis</h1>
+        <p style="color: var(--text-dim); margin-top: -10px;">Disfruta de la mejor recopilación de fotos y videos</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder=" Buscar...">
+    </div>
+
+    <div class="container" id="cards-container"></div>
+
+    <script>
+        const platforms = [
+            { name: "Karely Ruiz", logo: "https://qu.ax/CgAof.jpg", link: "https://putifans.github.io/Karely-Ruiz/" },
+            { name: "Windy Girk", logo: "https://qu.ax/tqm4B.jpg", link: "https://putifans.github.io/Windy-girk/" },
+            { name: "Sophie Rain", logo: "https://qu.ax/d70tA.jpg", link: "https://putifans.github.io/Sophie-Rain/" },
+            { name: "Valecasta", logo: "https://qu.ax/VOH49.jpg", link: "https://putifans.github.io/Valecasta/" },
+            { name: "Jameliz", logo: "https://qu.ax/97KXX.jpg", link: "https://putifans.github.io/Jameliz/" },
+            { name: "Ari Gameplays", logo: "https://qu.ax/4OcBo.jpg", link: "https://putifans.github.io/Ari-Gameplays/" },
+            { name: "Danyancat", logo: "https://qu.ax/WXizn.jpg", link: "https://putifans.github.io/Danyancat/" },
+            { name: "Kathrin3", logo: "https://qu.ax/1KYij.jpg", link: "https://putifans.github.io/Kathrin3/" },
+            { name: "Dayscolina", logo: "https://qu.ax/aQrKa.jpg", link: "https://putifans.github.io/Dayscolina/" },
+            { name: "Brisa Carnivales", logo: "https://qu.ax/J5LvI.jpg", link: "https://putifans.github.io/Brisa-Carnivales/" },
+            { name: "Aida Cortes", logo: "https://qu.ax/MVMZC.jpg", link: "https://putifans.github.io/Aida-cortes/" },
+            { name: "Yen La china", logo: "https://qu.ax/4j5Fk.jpg", link: "https://putifans.github.io/Yen-lachina-/" },
+            { name: "Meli Arevalo", logo: "https://qu.ax/RdE0a.jpg", link: "https://putifans.github.io/Meli-Arevalo/" },
+            { name: "Brujita Roja", logo: "https://qu.ax/1uDP1.jpg", link: "https://putifans.github.io/Brujita-Roja/" }
+        ];
+
+        const container = document.getElementById('cards-container');
+        const searchInput = document.getElementById('search-input');
+
+        function renderCards(data) {
+            container.innerHTML = '';
+            data.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.setAttribute('data-name', p.name.toLowerCase());
+                card.innerHTML = `
+                    <img src="${p.logo}" class="card-img" alt="${p.name}">
+                    <div class="card-overlay">
+                        <div class="badge-group">
+                            <span class="badge badge-top">TOP</span>
+                            <span class="badge badge-hot">HOT</span>
+                        </div>
+                        <div class="card-bottom">
+                            <h2 class="card-name">${p.name}</h2>
+                            <a href="${p.link}" target="_blank" class="btn-earn">Ver Ahora ➔</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        renderCards(platforms);
+
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            document.querySelectorAll('.card').forEach(card => {
+                const name = card.getAttribute('data-name');
+                card.classList.toggle('hidden', !name.includes(searchTerm));
+            });
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const isOpen = menu.style.display === 'flex';
+            menu.style.display = isOpen ? 'none' : 'flex';
+            menuIcon.classList.toggle('open', !isOpen);
+        }
+    </script>
 </body>
-</html>
+  </html>
